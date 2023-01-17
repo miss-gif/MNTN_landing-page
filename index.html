@@ -5,27 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
 
   <body>
-    <header id="header">
-      <h1>MNTN</h1>
-      <nav>
+    <header id="header" class="header">
+      <h1>
+        <a href=""><img src="./images/Logo.svg" alt="" /></a>
+      </h1>
+      <nav class="gnb">
         <ul>
           <li><a href="">Equipment</a></li>
           <li><a href="">About us</a></li>
           <li><a href="">Blog</a></li>
         </ul>
-        <a href="">Account</a>
       </nav>
+      <a href="" class="btn-account">Account</a>
     </header>
 
     <main>
       <div class="visual">
         <div class="sns">
-          Follow us
-          <a href="" aria-label="인스타그램"></a>
-          <a href="" aria-label="트위터"></a>
+          <div class="sns__title">Follow us</div>
+          <a href="" aria-label="인스타그램" class="btn-insta"></a>
+          <a href="" aria-label="트위터" class="btn-twitter"></a>
         </div>
         <div class="visual__copy">
           <span class="sub-title">A Hiking guide</span>
@@ -33,20 +46,21 @@
             Be prepared for the<br />
             Mountains and beyond!
           </p>
-          <a href="">scroll down</a>
+          <a href="" class="scroll-guide">scroll down</a>
         </div>
         <nav class="quick">
           <ul>
-            <li><a href="#header">Start</a></li>
+            <li><a href="#header" class="active">Start</a></li>
             <li><a href="#block1">01</a></li>
             <li><a href="#block2">02</a></li>
             <li><a href="#block3">03</a></li>
           </ul>
         </nav>
       </div>
-      <img src="./images/bg_sky.png" alt="" />
-      <img src="./images/bg-mount.png" alt="" />
-      <img src="./images/bg-hill.png" alt="" />
+      <img src="./images/bg_sky.png" alt="" class="bg-img1" />
+      <img src="./images/bg-mount.png" alt="" class="bg-img2" />
+      <img src="./images/bg-hill.png" alt="" class="bg-img3" />
+      <div class="gradient-content"></div>
 
       <section class="index-contents">
         <div class="block" id="block1">

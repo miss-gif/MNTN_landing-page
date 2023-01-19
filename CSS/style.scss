@@ -1,10 +1,10 @@
-/* Typography */
+/* Typography 글꼴 */
 :root {
   --DM-font: "DM Serif Display", serif;
   --gilroy-font: "Gilroy", sans-serif;
 }
 
-/* Colors*/
+/* Colors 색상 */
 :root {
   --background-color: #0b1d26;
   --white: #fff;
@@ -14,7 +14,7 @@
   --gold: #fbd784;
 }
 
-/* Layouts */
+/* Layouts 레아이웃 */
 body {
   font-family: var(--gilroy-font);
   display: flex;
@@ -28,7 +28,7 @@ body {
   background-color: var(--background-color);
 }
 
-/* background */
+/* background 배경 */
 .bg-img1,
 .bg-img2,
 .bg-img3 {
@@ -52,7 +52,7 @@ body {
   background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 61.38%);
 }
 
-/* header */
+/* header 헤더 */
 .header {
   position: absolute;
   top: 64px;
@@ -88,7 +88,7 @@ body {
   }
 }
 
-/* Components */
+/* visual 비주얼 */
 .visual {
   position: relative;
   height: 100vh;
@@ -201,6 +201,7 @@ body {
   }
 }
 
+/* index-contents 섹션1 */
 .index-contents {
   margin-top: 350px;
   display: flex;
@@ -220,6 +221,8 @@ body {
   }
   &__info {
     position: relative;
+    padding-top: 140px;
+    padding-left: 150px;
   }
   &__title {
     width: 555px;
@@ -232,8 +235,6 @@ body {
   }
   &__count {
     position: absolute;
-    top: -20%;
-    left: -20%;
     top: 0;
     left: 0;
 
@@ -247,22 +248,20 @@ body {
     opacity: 0.1;
   }
   &__sub-title {
-    position: absolute;
-    width: 172px;
-    height: 22px;
-    left: 96px;
-    top: 0px;
-
-    font-family: "Gilroy";
-    font-style: normal;
     font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 32px;
     font-size: 18px;
-    line-height: 22px;
-
     letter-spacing: 6px;
     text-transform: uppercase;
-
     color: var(--gold);
+    &::before {
+      content: "";
+      width: 72px;
+      height: 2px;
+      background: var(--gold);
+    }
   }
   &__content {
     width: 632px;
@@ -285,12 +284,6 @@ body {
     flex-grow: 0;
   }
   &__more {
-    position: absolute;
-    width: 87px;
-    height: 22px;
-    left: 0px;
-    top: 417px;
-
     font-family: "Gilroy";
     font-size: 18px;
     line-height: 22px;
@@ -301,3 +294,5 @@ body {
     color: #fbd784;
   }
 }
+
+/* footer 푸터 */
